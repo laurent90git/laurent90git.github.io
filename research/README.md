@@ -7,7 +7,11 @@ My current research interests lie in the development of simulation tools and num
 
 ## Summary of my PhD work
 
-For my PhD thesis, I worked during 3 years on the subject __"Multiphysics modelling and simulation of the ignition transient in solid rocket motor"__. This work was conducted by Prof. Marc Massot from CMAP, Ecole Polytechnique, and Joël Dupays, research enginneer at ONERA, the French Aerospace Lab.
+For my PhD thesis, I worked during 3 years on the subject
+<p align="center">
+__"Multiphysics modelling and simulation of the ignition transient in solid rocket motor"__.
+</p>
+This work was conducted by Prof. Marc Massot from CMAP, Ecole Polytechnique, and Joël Dupays, research enginneer at ONERA, the French Aerospace Lab.
 The final manuscript is available [here](https://www.theses.fr/2022IPPAX004), and you can watch the replay of the defense [here](https://www.youtube.com/watch?v=sHh0csPVN0M).
 
 This work brought a few contributions, e.g. :
