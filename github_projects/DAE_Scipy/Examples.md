@@ -12,31 +12,31 @@ The pendulum DAE of index 3 is obtained simply by using Newton's law on the
   and y the vertical axis (positive upwards). The rod force exerced on the mass
   is T. The system reads:
 
-	$$\begin{align}
-    dx/dt = v_x                       \\
-    dydt = v_y                        \\
-    d_tv_x = -(T/m)*\sin(\theta)     \\
-    \dfrac{dv_y}{dt} =  \frac{T}{m) cos(\theta) - g \\
-    x^2 + y^2 = r_0^2
-	\end{align}$$
-	
-	
-	$$
-	\begin{align*}
-	  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-	  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-	  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-		  \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-		  \vdots & \ddots & \vdots \\
-		  \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-		\end{array} \right)
-	  \left( \begin{array}{c}
-		  y_1 \\
-		  \vdots \\
-		  y_n
-		\end{array} \right)
-	\end{align*}
-	$$
+$$\begin{align}
+dx/dt = v_x                       \\
+dydt = v_y                        \\
+d_tv_x = -(T/m)*\sin(\theta)     \\
+\dfrac{dv_y}{dt} =  \frac{T}{m) cos(\theta) - g \\
+x^2 + y^2 = r_0^2
+\end{align}$$
+
+
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+	  \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+	  \vdots & \ddots & \vdots \\
+	  \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+	\end{array} \right)
+  \left( \begin{array}{c}
+	  y_1 \\
+	  \vdots \\
+	  y_n
+	\end{array} \right)
+\end{align*}
+$$
 
   Equation (5) ensures that the rod-length remains constant.
   By expression sin(theta) as x/sqrt(x**2+y**2) and cos(theta)=-y/sqrt(x**2+y**2),
