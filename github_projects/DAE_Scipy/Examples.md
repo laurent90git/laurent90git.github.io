@@ -21,6 +21,8 @@ x^2 + y^2 = r_0^2
 \end{align}$$
 
 
+testing:
+
 $$
 \begin{align*}
   & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
