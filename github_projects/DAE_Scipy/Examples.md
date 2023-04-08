@@ -20,9 +20,17 @@ $$
 $$
 
 
-\begin{align*}
+\begin{align}
  x^2 + y^2 &= r_0^2 \label{eq1}
-\end{align*}
+\end{align}
+
+\begin{align}
+ x^2 + y^2 &= r_0^2
+\end{align}
+
+\begin{align}
+ x^2 + y^2 &= r_0^2 \tag{eq1}
+\end{align}
 
 
 $$
