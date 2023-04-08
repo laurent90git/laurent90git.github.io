@@ -1,4 +1,4 @@
-#DAE-Scipy
+# DAE-Scipy
 
 This Python package is an extension of the native Python ODE solver Radau from the Scipy library.
 

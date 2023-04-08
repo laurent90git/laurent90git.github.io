@@ -1,8 +1,9 @@
 ---
 sort: 2
 ---
+#Research
 
-# Summary of my PhD work
+## Summary of my PhD work
 
 For my PhD thesis, I worked during 3 years on the subject ``Multiphysics modelling and simulation of the ignition transient in solid rocket motor''. This work was conducted by Prof. Marc Massot from CMAP, Ecole Polytechnique, and Joël Dupays, research enginneer at ONERA, the French Aerospace Lab.
 
@@ -14,7 +15,7 @@ This work brought a few contributions, e.g. :
 - assessment through simulations of the modelling assumptions
 - exploration of adaptive high-order code coupling techniques to enhance the accuracy and efficiency of simulations involving multiple solvers.
 
-# Reasearch work at ONERA
+## Reasearch work at ONERA
 
 Following my PhD defense in early 2022, I have become a research engineer at ONERA in Palaiseau, France.
 My main subjects are:
