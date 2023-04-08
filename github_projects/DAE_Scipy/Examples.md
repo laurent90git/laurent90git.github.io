@@ -50,3 +50,12 @@ Here is an example showing the free fall of chain, whose tip surprisingly falls 
 <iframe width="320" height="560" src="https://www.youtube.com/embed/VESQ7IXPlQw" title="Free falling chain simulation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## 3. Stiff ODEs
+
+The DAE-adapted code remains compatible with purely differential equations. Radau5 is often recognised as the archetype of the stiff integrator.
+Being L-stable, possessing both a high order and high stage order with stiff accuracy, it handles stiff and very stiff equations naturally. Its embedded error estimate can also be corrected for stiffness, ensuring the time step is not limited by stiffness.
+
+The well-known Robertson ODE is one such model. It models a small network of reactions with vastly different time scales. Its ODE formulation is:
+TODO
+
+An equivalent index-1 formulation is:
+TODO
