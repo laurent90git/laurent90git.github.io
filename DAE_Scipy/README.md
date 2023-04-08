@@ -6,3 +6,5 @@ It enables the introduction of use of a constant mass matrix $M$ terential-algeb
 $$My' = f(t,y)$$
 
 Extension to variable mass matrices and equations of the form $d_t g(y) = f(t,y)$ is in the works !
+
+{% include list.liquid all=true %}
