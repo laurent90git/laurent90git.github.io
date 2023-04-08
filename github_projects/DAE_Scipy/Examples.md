@@ -23,7 +23,7 @@ $$
 test
 $$
 \begin{align*}
- & \frac{dv_y}{dt} &=&  \frac{T}{m) cos(\theta) - g \\
+ & d_t v_y &=&  T/m cos(\theta) - g \\
 \end{align*}
 $$
 
@@ -38,9 +38,18 @@ $$
 test
 
 $$
-\begin{align*}
+\begin{align}
+\frac{T}{m}
+\end{align}
+$$
+
+
+test
+
+$$
+\begin{align}
 x^2 + y^2 &=& r_0^2
-\end{align*}
+\end{align}
 $$
 
 
