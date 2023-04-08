@@ -7,7 +7,41 @@ Here are a few example results obtained with this code.
 ## 1. Index-3 DAE: Pendulum
 
 The movement of pendulum with an infinitely stiff rod can be modelled in cartesian coordinates as a set of index-3 DAEs:
+The pendulum DAE of index 3 is obtained simply by using Newton's law on the
+  pendulum of mass m in the (x,y) reference frame, x being the horizontal axis,
+  and y the vertical axis (positive upwards). The rod force exerced on the mass
+  is T. The system reads:
 
+	\begin{align}
+    dx/dt = v_x                       \\
+    dydt = v_y                        \\
+    d_tv_x = -(T/m)*\sin(\theta)     \\
+    \dfrac{dv_y}{dt} =  \frac{T}{m) cos(\theta) - g \\
+    x^2 + y^2 = r_0^2
+	\end{align}
+
+  Equation (5) ensures that the rod-length remains constant.
+  By expression sin(theta) as x/sqrt(x**2+y**2) and cos(theta)=-y/sqrt(x**2+y**2),
+  we may introduce lbda=T/sqrt(x**2+y**2) and rewrite Equations (4) and (5) as:
+
+    d(vx)/dt = -lbda*x/m               (3a)
+    d(vy)/dt = -lbda*y/m - g           (4a)
+
+  The new variable "lbda" plays the role of a Lagrange multiplier, which adjusts
+  istelf in time so that equation (5) is not violated, i.e. the solution remains
+  on the manifold x^2 +y^2 - r0^2 = 0.
+
+  The corresponding system (1,2,3a,4a,5) is a DAE of index 3.
+  We can obtain lower-index DAE by differentiating equation (5) with respect
+  to time. If we do it once, we obtain:
+
+    x*vx + y*vy = 0                    (6)
+
+  Physically, this means that the velocity vector of the pendulum mass is
+  always perpendicular to the rod. The system (1,2,3a,3b,6) is a DAE of index 1.
+  If we differentiate it once more with respect to time, we obtain:
+
+    lbda*(x^2 + y^2)  + m*(vx^2 + vy^2) - m*g*y = 0     (7)
 
 ## 2. Large-Scale index-3 DAE: pendulum chain
 
