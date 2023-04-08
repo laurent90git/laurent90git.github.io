@@ -14,11 +14,11 @@ The pendulum DAE of index 3 is obtained simply by using Newton's law on the
 
 $$
 \begin{align*}
- dx/dt &=& v_x \\
- dydt &=& v_y \\
- d_t v_x &=& - \frac{T}{m} sin(\theta) \\
- d_t v_y &=&  \frac{T}{m} cos(\theta) - g \\
- x^2 + y^2 &=& r_0^2
+ dx/dt &= v_x \\
+ dydt  &= v_y \\
+ d_t v_x &= - \frac{T}{m} sin(\theta) \\
+ d_t v_y &=  \frac{T}{m} cos(\theta) - g \\
+ x^2 + y^2 &= r_0^2
 \end{align*}
 $$
 
@@ -41,7 +41,7 @@ test
 
 $$
 \begin{align}
-\frac{T}{m}
+\cfrac{T}{m}
 \end{align}
 $$
 
