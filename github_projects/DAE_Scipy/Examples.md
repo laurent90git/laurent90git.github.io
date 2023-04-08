@@ -10,63 +10,32 @@ The movement of pendulum with an infinitely stiff rod can be modelled in cartesi
 Applying Newton's law in the $$(x,y)$$ reference frame, $$x$$ being the horizontal axis, and $$y$$ the vertical axis (positive upwards), we obtain:
 
 $$
-\begin{align*}
- d_t x &= v_x \\
- d_t y &= v_y \\
- d_t v_x &= - \tfrac{T}{m} sin(\theta) \\
- d_t v_y &=  \tfrac{T}{m} cos(\theta) - g \\
- x^2 + y^2 &= r_0^2
-\end{align*}
-$$
-
-
 \begin{align}
- x^2 + y^2 &= r_0^2 \tag{1.1}\label{eq1}
+ d_t x &= v_x \tag{1.1}\label{eq1}\\
+ d_t y &= v_y \tag{1.2}\label{eq2}\\
+ d_t v_x &= - \tfrac{T}{m} sin(\theta) \tag{1.3}\label{eq3}\\
+ d_t v_y &=  \tfrac{T}{m} cos(\theta) - g \tag{1.4}\label{eq4}\\
+ x^2 + y^2 &= r_0^2 \tag{1.5}\label{eq5}
 \end{align}
-
-\begin{align}
- x^2 + y^2 &= r_0^2
-\end{align}
-
-\begin{align}
- x^2 + y^2 &= r_0^2 \tag{eq1}
-\end{align}
-
-
 $$
-\begin{align*}
- x^2 + y^2 &= r_0^2 \tag{eq1}
-\end{align*}
-$$
-
-$$
-\begin{align*}
- x^2 + y^2 &= r_0^2 \tag{1}
-\end{align*}
-$$
-
-
-calling \eqref{eq1}
-
-\ref{eq1}
-
- 
  
 with $$m$$ the mass attached at the end of the rod, $$L$$ the length of this (massless) rod, and $$T$$ the force it exerts on the mass.
 
-testing:
+Equation \eqref{eq5} ensures that the rod-length remains constant.
+By expression $$sin(\theta)$$ as $$x/\sqrt{x^2+y^2}$$ and $$cos(\theta)=-y/\sqrt{x^2+y^2)$$,
+we may introduce $$\lambda=T/\sqrt{x**2+y**2}$$ and rewrite Equations \eqref{eq3} and \eqref{eq4} as:
 
+\begin{align}
+ d_t v_x &= - \lambda x/m \tag{1.6}\label{eq6}\\
+ d_t v_y &= - \lambda y/m - g \tag{1.7}\label{eq7}\\
+\end{align}
 
-  Equation (5) ensures that the rod-length remains constant.
-  By expression sin(theta) as x/sqrt(x**2+y**2) and cos(theta)=-y/sqrt(x**2+y**2),
-  we may introduce lbda=T/sqrt(x**2+y**2) and rewrite Equations (4) and (5) as:
-
-    d(vx)/dt = -lbda*x/m               (3a)
-    d(vy)/dt = -lbda*y/m - g           (4a)
 
   The new variable "lbda" plays the role of a Lagrange multiplier, which adjusts
   istelf in time so that equation (5) is not violated, i.e. the solution remains
   on the manifold x^2 +y^2 - r0^2 = 0.
+  
+  The issue is that the time derivative of $$T$$ does not appear.
 
   The corresponding system (1,2,3a,4a,5) is a DAE of index 3.
   We can obtain lower-index DAE by differentiating equation (5) with respect
