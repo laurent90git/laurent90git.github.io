@@ -1,4 +1,4 @@
-# pyRadau5
+# Runge-Kutta
 
 `pyRadau5` is a Python wrapper around the well-known Fortran ODE/DAE integrator [Radau5](http://www.unige.ch/~hairer/software.html), an adaptive high-order L-stable time implicit Runge-Kutta method relying on Radau quadrature points. This method is especially suited to the integration of stiff systems and DAEs up to index 3 in the following form:
 

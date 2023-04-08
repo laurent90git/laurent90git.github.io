@@ -1,12 +1,18 @@
-# pyRadau5
+# Finite-volume Euler solvers
 
-`pyRadau5` is a Python wrapper around the well-known Fortran ODE/DAE integrator [Radau5](http://www.unige.ch/~hairer/software.html), an adaptive high-order L-stable time implicit Runge-Kutta method relying on Radau quadrature points. This method is especially suited to the integration of stiff systems and DAEs up to index 3 in the following form:
+## CFD_Euler_1D
 
-<p align="center">
-$$M y' = f(t,y)$$
-</p>
+This is a pure Python CFD solver for the simulation of a one-dimensional compressible flow of a single perfect gas.
+It is a useful platform to learn about finte-volume schemes and test various approaches.
+Implemented are the simple first-order Godunov scheme, and the second-order MUSCL-Hancock scheme with limiters.
+Time integration is mostly implicit with CFL-based time step.
 
-with a potentielly singular mass matrix $$M$$.
+Here is the space-time diagram of the Schlieren field ($$log10(||\mathrm{grad}(\rho)||)$$) which visualises the various waves (shocks, contact discontinuity and rarefactions) which appear during the simulation of a simple shock tube.
 
-The original Fortran code has been instrumented to gain deeper insight into its internal behaviour (step rejection, Newton convergence...).
-Optional parameters have been added to enhance the robustness of the linear system solution for high-index DAEs.
+## CFD_Euler_2D
+
+This is a modification of the previous code for the simulation of two-dimensional flows. Note that performance becomes relatively poor due to the pure Python interface, however it is still an interesting learning platform.
+
+Here is an animation of a Rayleigh instability when a flow is submitted to a gravity field:
+
+*(Note that we can spot pressure waves moving up and down, which surely accelerate the destabilisation, these waves are due to a small error in the initial field)*
