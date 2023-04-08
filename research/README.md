@@ -1,12 +1,14 @@
 ---
 sort: 2
 ---
-#Research
+# Research
+
+My current research interests lie in the development of simulation tools and numerical methods for the study of reactive fluid flows, and also the development of high-order adaptive coupling of specialised solvers to enable accurate and efficient unsteady multiphysics simulations (e.g. conjugate heat transfer).
 
 ## Summary of my PhD work
 
-For my PhD thesis, I worked during 3 years on the subject ``Multiphysics modelling and simulation of the ignition transient in solid rocket motor''. This work was conducted by Prof. Marc Massot from CMAP, Ecole Polytechnique, and Joël Dupays, research enginneer at ONERA, the French Aerospace Lab.
-The final manuscript is available [here](https://www.theses.fr/2022IPPAX004), and the replay of the defense can be watched [here](https://www.youtube.com/watch?v=sHh0csPVN0M).
+For my PhD thesis, I worked during 3 years on the subject __"Multiphysics modelling and simulation of the ignition transient in solid rocket motor"__. This work was conducted by Prof. Marc Massot from CMAP, Ecole Polytechnique, and Joël Dupays, research enginneer at ONERA, the French Aerospace Lab.
+The final manuscript is available [here](https://www.theses.fr/2022IPPAX004), and you can watch the replay of the defense [here](https://www.youtube.com/watch?v=sHh0csPVN0M).
 
 This work brought a few contributions, e.g. :
 - clarification of the mathematical nature of the model describing the burning of a solid propellant (differential-algebraic system of index 1)
