@@ -21,7 +21,7 @@ $$
 
 
 \begin{align}
- x^2 + y^2 &= r_0^2 \label{eq1}
+ x^2 + y^2 &= r_0^2 \tag{1.1}\label{eq1}
 \end{align}
 
 \begin{align}
@@ -46,7 +46,9 @@ $$
 $$
 
 
-calling \ref{eq1}
+calling \eqref{eq1}
+
+\ref{eq1}
 
  
  
