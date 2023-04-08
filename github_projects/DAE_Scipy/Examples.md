@@ -16,6 +16,14 @@ $$
 \begin{align*}
  & dx/dt &=& v_x \\
  & dydt &=& v_y \\
+ & d_t v_x &=& -(T/m) sin(\theta) \\
+\end{align*}
+$$
+
+test
+$$
+\begin{align*}
+ & \frac{dv_y}{dt} &=&  \frac{T}{m) cos(\theta) - g \\
 \end{align*}
 $$
 
@@ -23,10 +31,16 @@ test
 
 $$
 \begin{align}
- & d_t v_x &=& -(T/m) sin(\theta) \\
- & \frac{dv_y}{dt} &=&  \frac{T}{m) cos(\theta) - g \\
 x^2 + y^2 &=& r_0^2
 \end{align}
+$$
+
+test
+
+$$
+\begin{align*}
+x^2 + y^2 &=& r_0^2
+\end{align*}
 $$
 
 
