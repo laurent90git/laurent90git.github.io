@@ -19,11 +19,11 @@ $$
 \end{align*}
 $$
 
-$$
+
 \begin{align*}
  x^2 + y^2 &= r_0^2 \label{eq1}
 \end{align*}
-$$
+
 
 $$
 \begin{align*}
@@ -37,6 +37,8 @@ $$
 \end{align*}
 $$
 
+
+calling \ref{eq1}
  
  
 with $$m$$ the mass attached at the end of the rod, $$L$$ the length of this (massless) rod, and $$T$$ the force it exerts on the mass.
