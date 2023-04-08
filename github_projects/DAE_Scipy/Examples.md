@@ -2,77 +2,25 @@
 
 Please come back later, this is still in the works :)
 
-Here are a few example results obtained with this code.
+Here are a few example results obtained with this code. The initial example also serves as a short introduction to differential-algebraic equations.
 
 ## 1. Index-3 DAE: Pendulum
 
-The movement of pendulum with an infinitely stiff rod can be modelled in cartesian coordinates as a set of index-3 DAEs:
-The pendulum DAE of index 3 is obtained simply by using Newton's law on the
-  pendulum of mass m in the (x,y) reference frame, x being the horizontal axis,
-  and y the vertical axis (positive upwards). The rod force exerced on the mass
-  is T. The system reads:
-
+The movement of pendulum with an infinitely stiff rod can be modelled in cartesian coordinates as a set of index-3 DAEs.
+Applying Newton's law in the $$(x,y)$$ reference frame, $$x$$ being the horizontal axis, and $$y$$ the vertical axis (positive upwards), we obtain:
 $$
 \begin{align*}
- dx/dt &= v_x \\
- dydt  &= v_y \\
+ d_t x &= v_x \\
+ d_t y &= v_y \\
  d_t v_x &= - \tfrac{T}{m} sin(\theta) \\
- d_t v_y &=  \frac{T}{m} cos(\theta) - g \\
+ d_t v_y &=  \tfrac{T}{m} cos(\theta) - g \\
  x^2 + y^2 &= r_0^2
 \end{align*}
 $$
-
-test
-$$
-\begin{align*}
- & d_t v_y &=&  \frac{T}{m} cos(\theta) - g \\
-\end{align*}
-$$
-
-test 
-
-$$
-\begin{align}
-x^2 + y^2 &=& r_0^2
-\end{align}
-$$
-
-test
-
-$$
-\begin{align}
-\tfrac{T}{m}
-\end{align}
-$$
-
-
-test
-
-$$
-\begin{align}
-x^2 + y^2 &=& r_0^2
-\end{align}
-$$
-
+with $$m$$ the mass attached at the end of the rod, $$L$$ the length of this (massless) rod, and $$T$$ the force it exerts on the mass.
 
 testing:
 
-$$
-\begin{align*}
-  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-	  \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-	  \vdots & \ddots & \vdots \\
-	  \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-	\end{array} \right)
-  \left( \begin{array}{c}
-	  y_1 \\
-	  \vdots \\
-	  y_n
-	\end{array} \right)
-\end{align*}
-$$
 
   Equation (5) ensures that the rod-length remains constant.
   By expression sin(theta) as x/sqrt(x**2+y**2) and cos(theta)=-y/sqrt(x**2+y**2),
