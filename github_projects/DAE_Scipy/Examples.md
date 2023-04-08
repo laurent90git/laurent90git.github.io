@@ -39,6 +39,7 @@ $$
 
 
 calling \ref{eq1}
+
  
  
 with $$m$$ the mass attached at the end of the rod, $$L$$ the length of this (massless) rod, and $$T$$ the force it exerts on the mass.
