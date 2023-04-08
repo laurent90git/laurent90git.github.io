@@ -1,6 +1,6 @@
 #DAE-Scipy
 
-This Python package is a specialisation of the native Python solver Radau from the Scipy library.
+This Python package is an extension of the native Python ODE solver Radau from the Scipy library.
 
 It enables the introduction of use of a constant mass matrix $$M$$
 to solve differential-algebraic equations up to index 3 :
@@ -9,6 +9,4 @@ to solve differential-algebraic equations up to index 3 :
 $$My' = f(t,y)$$
 </p>
 
-Extension to variable mass matrices and equations of the form $$d_t g(y) = f(t,y)$$ is in the works !
-
-source: `{{ page.path }}`
+Extensions to variable mass matrices and equations of the form $$d_t g(y) = f(t,y)$$ are in the works !
