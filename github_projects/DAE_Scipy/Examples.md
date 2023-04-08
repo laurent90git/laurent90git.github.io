@@ -22,14 +22,16 @@ $$
 with $$m$$ the mass attached at the end of the rod, $$L$$ the length of this (massless) rod, and $$T$$ the force it exerts on the mass.
 
 Equation \eqref{eq5} ensures that the rod-length remains constant.
-By expression $$sin(\theta)$$ as $$x/\sqrt{x^2+y^2}$$ and $$cos(\theta)=-y/\sqrt{x^2+y^2)$$,
-we may introduce $$\lambda=T/\sqrt{x**2+y**2}$$ and rewrite Equations \eqref{eq3} and \eqref{eq4} as:
+By using $$sin(\theta) = x/\sqrt{x^2+y^2}$$
+and $$cos(\theta) = - y / \sqrt{x^2+y^2)$$,
+we may introduce $$\lambda=T/\sqrt{x^2+y^2}$$ and rewrite Equations \eqref{eq3} and \eqref{eq4} as:
 
+$$
 \begin{align}
  d_t v_x &= - \lambda x/m \tag{1.6}\label{eq6}\\
- d_t v_y &= - \lambda y/m - g \tag{1.7}\label{eq7}\\
+ d_t v_y &= - \lambda y/m - g \tag{1.7}\label{eq7}
 \end{align}
-
+$$
 
   The new variable "lbda" plays the role of a Lagrange multiplier, which adjusts
   istelf in time so that equation (5) is not violated, i.e. the solution remains
