@@ -8,6 +8,7 @@ Here are a few example results obtained with this code. The initial example also
 
 The movement of pendulum with an infinitely stiff rod can be modelled in cartesian coordinates as a set of index-3 DAEs.
 Applying Newton's law in the $$(x,y)$$ reference frame, $$x$$ being the horizontal axis, and $$y$$ the vertical axis (positive upwards), we obtain:
+
 $$
 \begin{align*}
  d_t x &= v_x \\
@@ -17,6 +18,27 @@ $$
  x^2 + y^2 &= r_0^2
 \end{align*}
 $$
+
+$$
+\begin{align*}
+ x^2 + y^2 &= r_0^2 \label{eq1}
+\end{align*}
+$$
+
+$$
+\begin{align*}
+ x^2 + y^2 &= r_0^2 \tag{eq1}
+\end{align*}
+$$
+
+$$
+\begin{align*}
+ x^2 + y^2 &= r_0^2 \tag{1}
+\end{align*}
+$$
+
+ 
+ 
 with $$m$$ the mass attached at the end of the rod, $$L$$ the length of this (massless) rod, and $$T$$ the force it exerts on the mass.
 
 testing:
