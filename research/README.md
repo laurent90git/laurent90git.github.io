@@ -5,6 +5,8 @@ sort: 2
 
 My current research interests lie in the development of simulation tools and numerical methods for the study of reactive fluid flows, and also the development of high-order adaptive coupling of specialised solvers to enable accurate and efficient unsteady multiphysics simulations (e.g. conjugate heat transfer).
 
+My Google Scholar page is [here](https://scholar.google.fr/citations?user=K0jov1cAAAAJ).
+
 ## Summary of my PhD work
 
 For my PhD thesis, I worked during 3 years on the subject
