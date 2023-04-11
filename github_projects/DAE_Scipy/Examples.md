@@ -23,7 +23,7 @@ with $$m$$ the mass attached at the end of the rod, $$L$$ the length of this (ma
 
 Equation \eqref{eq5} ensures that the rod-length remains constant.
 By using $$sin(\theta) = x/\sqrt{x^2+y^2}$$
-and $$cos(\theta) = - y / \sqrt{x^2+y^2)$$,
+and $$cos(\theta) = - y / \sqrt{x^2+y^2}$$,
 we may introduce $$\lambda=T/\sqrt{x^2+y^2}$$ and rewrite Equations \eqref{eq3} and \eqref{eq4} as:
 
 $$
@@ -33,15 +33,16 @@ $$
 \end{align}
 $$
 
-  The new variable "lbda" plays the role of a Lagrange multiplier, which adjusts
-  istelf in time so that equation (5) is not violated, i.e. the solution remains
-  on the manifold x^2 +y^2 - r0^2 = 0.
+Here, $$\lambda$$ plays the role of a Lagrange multiplier, which adjusts istelf in time so that equation \eqref{eq5} is not violated,
+i.e. the solution remains on the manifold $$x^2 +y^2 - r0^2 = 0$$.
   
-  The issue is that the time derivative of $$T$$ does not appear.
+The issue is that the time derivative of $$T$$ does not appear, hence a trivial application of classical ODE integrators is not possible.
+Equation \eqref{eq5} is algebraic, and is also referred to as a constraint. The variable $lambda$ is termed *algebraic* variable, while the other variables are termed *differential*.
+The system is therefore said to be a set of  *differential-algebraic equations* (DAEs).
+A key attribute os such a system is its *index*, which is the number of times one or multiple equations from the original system must be derived in order to obtain an explicit expression for the time derivatives of the algebraic variables.
 
-  The corresponding system (1,2,3a,4a,5) is a DAE of index 3.
-  We can obtain lower-index DAE by differentiating equation (5) with respect
-  to time. If we do it once, we obtain:
+We can show that the system (\ref{eq1}-\ref{eq5}}) is of index 3.
+Let us differentiate the constraint \eqref{eq5} to time. If we do it once, we obtain:
 
     x*vx + y*vy = 0                    (6)
 
